@@ -1,0 +1,38 @@
+body{
+    background-color: aquamarine;
+    background-image: url(./Images/windowsXP.jpg);
+}
+div{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    align-items: center;
+}
+.inpt{
+    background-color: #d2d2d2;
+    width: 300px;
+    margin: 0.5rem;
+    outline: none;
+    box-shadow: 6px 6px 1px -3px rgba(0,0,0,0.21);
+}
+.box-btn{
+   display: flex;
+   flex-direction: row;
+   margin-top: 1rem;
+}
+button{
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
+    background-color: #d2d2d2;
+    box-shadow: 6px 6px 1px -3px rgba(0,0,0,0.21);
+    cursor: pointer;
+}
+.clean{
+    width: 120px;
+}
+h2{
+    color: white;
+    outline: black;
+    font-size: 2rem;
+}
