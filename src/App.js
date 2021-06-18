@@ -19,7 +19,7 @@ class app extends Component{
       n2: Number(event.target.value)
     });
   };
-  clean = () => {
+  clear = () => {
     this.setState({
       n1: '',
       n2: '',
@@ -52,14 +52,14 @@ class app extends Component{
     return(
       <div>
         <h1>Calculator 2000</h1>
-        <input className='inpt' onChange = {this.batata}></input>
-        <input className='inpt' onChange = {this.batata_doce}></input>
+        <input className='inpt' value={this.state.n1} onChange = {this.batata}></input>
+        <input className='inpt' value={this.state.n2} onChange = {this.batata_doce}></input>
         <div className='box-btn'>
         <button onClick = {this.add}>+</button>
         <button onClick = {this.remove}>-</button>
         <button onClick = {this.multi}>x</button>
         <button onClick = {this.divide}>/</button>
-        <button className='clean' onClick = {this.clean}>Limpar</button>
+        <button className='clean' onClick = {this.clear}>Limpar</button>
         </div>
         <h2>{this.state.res}</h2>
       </div>
